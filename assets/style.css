@@ -1,6 +1,7 @@
 body,html{
     overflow-x: hidden;
 }
+
 body{
     font-family: "Poppins",sans-serif;
     font-size: 17px;
@@ -53,6 +54,7 @@ a:focus{
     font-family: 'volkhov', sans-serif;
     font-weight: bold;
     font-size: 50px;
+    line-height: 1.3;
 }
 
 
@@ -178,4 +180,133 @@ a:focus{
     color: #5E6282;
     line-height: 1.6;
     margin-top: 10px;
+}
+
+.sectionButton{
+    padding: 8px 20px;
+    border: 1px solid #EDEDED;
+    font-family: 'poppins', sans-serif;
+    color: #5E6282;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+
+.sectionButton.active{
+    border: none;
+    outline: none;
+    background-color: #F1A501;
+    color: #fff;
+}
+.tripdays span svg{
+    height: 18px;
+    width: 18px;
+    fill:#080809;
+}
+
+.destinationCard{
+    position: relative;
+    border-radius: 24px;
+}
+.destinationCard .imgPart{
+    border-radius: 24px;
+    background-color: transparent;
+}
+.destinationCard .imgPart img{
+    border-radius: 24px;
+}
+
+.destinationCard .imgPart img{
+    width: 100%;
+}
+.destinationCard .destInfo{
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: none;
+    padding: 20px 20px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background-color: #fff;
+}
+
+.destinationCard:hover img{
+    box-shadow: 0 100px 80px rgba(0,0,0,0.3);
+}
+
+.destinationCard:hover .destInfo{
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background-color: #fff;
+}
+
+.destInfo .destiPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #5E6282;
+    font-weight: 500;
+}
+
+.destInfo .tripdays{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #5E6282;
+}
+
+.easyAndFastSection .easyImg img{
+    width: 100%;
+}
+
+.uspSec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.uspSec .upsIcon span{
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uspSec .upsIcon span svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+.uspSec .upsIcon span.yellow{
+    background-color: #F0BB1F;
+}
+.uspSec .upsIcon span.orange{
+    background-color: #F15A2B;
+}
+.uspSec .upsIcon span.purple{
+    background-color: #006380;
+}
+.uspSec .uspDesc .h3-head{
+    font-size: 16px;
+    font-weight: bold;
+    color: #5E6282;
+}
+.uspSec .uspDesc .upsPara{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5E6282;
+}
+.gallarySlider{
+    width: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    border-radius: 24px;
 }
