@@ -43,6 +43,18 @@ a:focus{
     padding: 60px 0;
 }
 
+.subHeadSec{
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color: #5E6282;
+}
+.section-head{
+    font-family: 'volkhov', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
 
 /* navabar style  */
 .navabrHeader ul li{
@@ -114,6 +126,13 @@ a:focus{
     border-radius: 10px;
     font-size: 16px;
 }
+.pageButton:hover{
+    background-color: #F1A501;
+    padding: 12px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+}
 .demoButton{
     display: flex;
     align-items: center;
@@ -134,4 +153,29 @@ a:focus{
 .demoButton .demo .play  svg{
     width: 13px;
     height: 13px;
+}
+
+.offerSection{
+    position: relative;
+}
+.offerSection::before{
+    content: url('./img/stars.png');
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+.offerCard{
+    padding: 20px 20px;
+}
+.offerCard .cardhead{
+    font-family: 'open-sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.offerCard .cardpara{
+    font-family: 'poppins', sans-serif;
+    color: #5E6282;
+    line-height: 1.6;
+    margin-top: 10px;
 }
