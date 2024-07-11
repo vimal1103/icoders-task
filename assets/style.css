@@ -310,3 +310,26 @@ a:focus{
     width: 100%;
     border-radius: 24px;
 }
+
+.swiper-button-next{
+    color: #000;
+    font-size: 16px !important;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.swiper-button-prev{
+    color: #000;
+    font-size: 16px !important;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 16px;
+    text-transform: none!important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
